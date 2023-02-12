@@ -23,6 +23,8 @@ figure.foto-legenda img{
     height: 100%;
 }
 
+/*EFEITO*/
+
 figure.foto-legenda figcaption{
     opacity: 0;
     position: absolute;
