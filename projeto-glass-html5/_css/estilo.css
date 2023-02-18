@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'FonteLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+
 body{
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
@@ -57,11 +66,6 @@ nav#menu a{
     text-decoration: none;
 }
 
-p{
-    text-align: justify;
-    text-indent: 50px;
-}
-
 /*Foto do cabeçalho*/
 
 header#cabecalho img#icone{
@@ -78,7 +82,7 @@ header#cabecalho{
 }
 
 header#cabecalho h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'FonteLogo', Helvetica, sans-serif;
     font-size: 30px;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
@@ -87,7 +91,7 @@ header#cabecalho h1{
 }
 
 header#cabecalho h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #888888;
     font-size: 15pt;
     padding: 0px;
@@ -127,4 +131,9 @@ figure.foto-legenda figcaption{
 
 figure.foto-legenda figcaption:hover{
     opacity: 100;
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
 }
