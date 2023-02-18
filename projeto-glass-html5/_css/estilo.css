@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
 body{
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
+}
+
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto; /*Para centralizar na tela*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+    padding: 10px;
 }
 
 /*Formatação do Menu*/
@@ -50,6 +58,18 @@ nav#menu a{
 p{
     text-align: justify;
     text-indent: 50px;
+}
+
+/*Foto do cabeçalho*/
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 760px;
+    top: 40px;
+}
+
+header#cabecalho{
+    
 }
 
 /*Formatação de imagens com legendas*/
