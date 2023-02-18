@@ -5,6 +5,32 @@ body{
     color: rgba(0, 0, 0, 1);
 }
 
+/*Formatação do Menu*/
+
+nav#menu{
+    display: block;/*Para flutuar pela tela*/
+}
+
+nav#menu ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    position: absolute;/*Para passar por cima dos elementos do site, o position relativa é apenas dentro do seu bloco*/
+    top: -20px;
+    left: 300px;
+
+}
+
+nav#menu li{
+    display: inline-block; /*Para o bloco ser exibido na mesma linha*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu h1{
+    display: none;
+}
+
 p{
     text-align: justify;
     text-indent: 50px;
