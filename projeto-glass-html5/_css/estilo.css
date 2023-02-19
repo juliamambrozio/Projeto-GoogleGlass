@@ -163,3 +163,17 @@ p{
     text-align: justify;
     text-indent: 50px;
 }
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px; /*Para tirar o espaço da tabela*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec  td{
+    border: 1px solid #606060;
+    padding: 10px;
+    
+
+}
