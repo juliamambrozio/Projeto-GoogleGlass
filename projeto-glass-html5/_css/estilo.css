@@ -163,6 +163,7 @@ footer#rodape p{
 
 header#cabecalho img#icone{
     position: absolute;
+    margin-left: 300px;
     left: 760px;
     top: 70px;
 }
