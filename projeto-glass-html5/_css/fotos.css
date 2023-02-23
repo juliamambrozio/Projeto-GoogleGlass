@@ -37,8 +37,6 @@ ul#album-fotos li:hover span{
 
 ul#album-fotos li:hover{
     -webkit-transform: scale(1.5); /*para dar o efeito do zoom*/
-    
-
 }
 
 ul#album-fotos li#foto01{
