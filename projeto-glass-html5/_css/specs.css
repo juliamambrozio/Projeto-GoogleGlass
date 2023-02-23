@@ -6,7 +6,7 @@ section#conteudo{
 }
 
 iframe#frame-spec{
-    width: 380px;
+    width: 400px;
     height: 280px;
     border: none;
     overflow: hidden; /*Evitar que a rolgem aconteça*/
