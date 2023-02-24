@@ -47,34 +47,64 @@
 
 
 
-<form action="">
-    Identificação do Usuário
-        Nome:
-        Senha:
-        E-mail:
-        Sexo:
-            - Masculino
-            - Feminino
-        Data de Nascimento:
+<form action="" method="">
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
+
+            <p>
+                <label for="inome">Nome:</label> 
+                <input type="text" name="inome" id="inome" size="20" maxlength="30" placeholder="Nome completo">
+            </p>
+
+            <p>
+                <label for="isenha">Senha:</label> 
+                <input type="password" name="isenha" id="isenha" size="8" maxlength="8" placeholder="8 digitos">
+            </p>
+
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="iemail" id="iemail"  placeholder="Seu e-mail">
+            </p>
+
+            <fieldset id="sexo">
+                <legend>Sexo:</legend>
+                
+                <input type="radio" name="is" id="im" checked><label for="im">Masculino</label></input><br>
+                <input type="radio" name="is" id="if"><label for="if">Feminino</label></input>
+            </fieldset>
+
+                <p>
+                    <label for="idata">Data de Nascimento: </label><input type="date" name="idata" id="idata">
+                </p>
+          
+
+    </fieldset> <!--Conjuntos de campos-->
     
-    Endereço do Usuário
-        Logradouro:
-        Número:
-        Estado:
-        Cidade:
+    <fieldset id="endereco">
+        <legend>Endereço do Usuário</legend>
+            <p><label for="ilogra">Logradouro:</label> <input type="text" name="ilogra" id="ilogra" size="13" maxlength="80" placeholder="Rua, Avenida, Trav."></p>
+            <p><label for="inum">Número:</label> <input type="number" name="inum" id="inum" min="0" max="9999"></p>
+            <p><label for="iestado">Estado:</label></p>
+            <p><label for="icid">Cidade:</label></p>
+    </fieldset>
     
-    Mensagem do Usuário
-        Grau de Urgência:
-        Mensagem:
+    <fieldset id="mensagem">
+        <legend>Mensagem do Usuário</legend>
+            <p><label for="igrau">Grau de Urgência:</label></p>
+            <p><label for="imen">Mensagem:</label></p>
+    </fieldset>
     
-    Quero um Google Glass
-        Gostaria de adquirir um Google Glass quando disponível
-        Cor:
-        Quantidade:
-        Preço Total: R$
+    <fieldset id="pedido">
+        <legend>Quero um Google Glass</legend>
+            <p><label for="iped">Gostaria de adquirir um Google Glass quando disponível</label></p>
+            <p><label for="icor">Cor:</label></p>
+            <p><label for="iqua">Quantidade:</label></p>
+            <p><label for="itot">Preço Total: R$</label></p>
+    </fieldset>
     
     
     [BOTÃO ENVIAR]
+
 </form>
 
 </article>
