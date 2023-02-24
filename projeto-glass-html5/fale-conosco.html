@@ -47,7 +47,7 @@
 
 
 
-<form action="" method="">
+<form action="" method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
     <fieldset id="usuario">
         <legend>Identificação do Usuário</legend>
 
@@ -82,16 +82,58 @@
     
     <fieldset id="endereco">
         <legend>Endereço do Usuário</legend>
-            <p><label for="ilogra">Logradouro:</label> <input type="text" name="ilogra" id="ilogra" size="13" maxlength="80" placeholder="Rua, Avenida, Trav."></p>
-            <p><label for="inum">Número:</label> <input type="number" name="inum" id="inum" min="0" max="9999"></p>
-            <p><label for="iestado">Estado:</label></p>
-            <p><label for="icid">Cidade:</label></p>
+
+            <p>
+                <label for="ilogra">Logradouro:</label> 
+                <input type="text" name="ilogra" id="ilogra" size="13" maxlength="80" placeholder="Rua, Avenida, Trav.">
+            </p>
+
+            <p>
+                <label for="inum">Número:</label> 
+                <input type="number" name="inum" id="inum" min="0" max="9999">
+            </p>
+
+            <p>
+                <label for="iestado">Estado:</label>
+                <select name="iestado" id="iestado">
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="icid">Cidade:</label>
+                <input type="text" name="icid" id="icid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidade"> <!--List: para linkar com o datalist-->
+
+                <datalist id="cidade">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Niterói"></option>
+                    <option value="Belford Roxo"></option>
+                </datalist>
+
+            </p>
     </fieldset>
     
     <fieldset id="mensagem">
         <legend>Mensagem do Usuário</legend>
-            <p><label for="igrau">Grau de Urgência:</label></p>
-            <p><label for="imen">Mensagem:</label></p>
+            <p>
+                <label for="igrau">Grau de Urgência:</label>
+                Min<input type="range" name="igrau" id="igrau" min="0" max="10" step="2">Máx
+            </p>
+            <p>
+                <label for="imen">Mensagem:</label><br>
+                <textarea name="imen" id="imen" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+            </p>
     </fieldset>
     
     <fieldset id="pedido">
