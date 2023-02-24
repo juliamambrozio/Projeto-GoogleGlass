@@ -270,3 +270,20 @@ table#tabelaspec caption span{
     font-size: 8pt;
     margin-top: 10px;
 }
+
+video#video1-home{
+    display: block;
+    position: relative;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+video#video2-home{
+    display: block;
+    position: relative;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 2px;
+
+}
