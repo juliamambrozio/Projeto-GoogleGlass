@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="_css/estilo.css">
     <script src="_javascript/funcoes.js"></script>
     <link rel="stylesheet" href="_css/form.css">
+
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('iqua').value)
+            tot = qtd * 1500;
+            document.getElementById('itot').value = tot;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -47,7 +56,7 @@
 
 
 
-<form action="" method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+<form action="" method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();"> <!--oniput: quando digitar qualquer coisa vai disparar um procedimento-->
     <fieldset id="usuario">
         <legend>Identificação do Usuário</legend>
 
@@ -132,22 +141,37 @@
             </p>
             <p>
                 <label for="imen">Mensagem:</label><br>
-                <textarea name="imen" id="imen" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                <textarea name="imen" id="imen" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
             </p>
     </fieldset>
     
     <fieldset id="pedido">
         <legend>Quero um Google Glass</legend>
-            <p><label for="iped">Gostaria de adquirir um Google Glass quando disponível</label></p>
-            <p><label for="icor">Cor:</label></p>
-            <p><label for="iqua">Quantidade:</label></p>
-            <p><label for="itot">Preço Total: R$</label></p>
+            <p>
+                <input type="checkbox" name="iped" id="iped" checked>
+                <label for="iped">Gostaria de adquirir um Google Glass quando disponível</label>
+            </p>
+
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="icor" id="icor" value="#0000FF">
+            </p>
+
+            <p>
+                <label for="iqua">Quantidade:</label>
+                <input type="number" name="iqua" id="iqua" min="0" max="5">
+            </p>
+
+            <p>
+                <label for="itot">Preço Total: R$</label>
+                <input type="text" name="itot" id="itot" placeholder="Total a pagar" readonly>
+                <!--Readonly: serve para o cliente não mexer na caixa de texto-->
+            </p>
     </fieldset>
-    
-    
-    [BOTÃO ENVIAR]
 
 </form>
+
+<input type="image" src="_imagens/botao-enviar.png" alt="" name="botao" id="botao">
 
 </article>
 </section>
