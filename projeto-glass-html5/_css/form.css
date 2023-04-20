@@ -56,4 +56,6 @@ input#botao:hover{
 input#botao{
     position: relative;
     left: 45%;
+
+    color: #0000b5;
 }
